@@ -1,0 +1,87 @@
+<!-- Alternative index.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beginner Project Hub</title>
+  <!-- Tailwind CSS via CDN alternative to Bootstrap -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- External alternative stylesheet -->
+  <link rel="stylesheet" href="alt-index.css">
+</head>
+<body class="bg-blue-50">
+  <!-- Header with horizontal menu instead of navbar -->
+  <header class="flex items-center justify-between p-4 bg-white shadow-md">
+    <div class="text-xl font-semibold">Student Project</div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="underline text-blue-600">Home</a></li>
+        <li><a href="portfolio.html" class="text-gray-700 hover:text-blue-600">Portfolio</a></li>
+        <li><a href="blog.html" class="text-gray-700 hover:text-blue-600">Blog</a></li>
+        <li><a href="products.html" class="text-gray-700 hover:text-blue-600">Products</a></li>
+        <li><a href="game.html" class="text-gray-700 hover:text-blue-600">Game</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero section using flex and custom CSS -->
+
+  <section id="hero" class="flex flex-col items-center justify-center h-96 bg-cover bg-center text-white" style="background-image:url('https://via.placeholder.com/1200x400');">
+    <h1 class="text-5xl mb-2">Welcome to My Website Project</h1>
+    <p class="max-w-lg text-center mb-4">This is the main hub page linking to Portfolio, Blog, Products, and Game sections. Feel free to explore!</p>
+    <button id="welcomeBtn" class="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700">Say Hello</button>
+  </section>
+
+  <!-- Grid of cards with different layout classes -->
+
+  <main class="container mx-auto py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Portfolio Card -->
+    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="https://via.placeholder.com/300x200" alt="Portfolio Thumbnail">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">Portfolio Page</h2>
+        <p class="mt-2">Check out my projects and work samples.</p>
+        <a href="portfolio.html" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded">Go to Portfolio</a>
+      </div>
+    </article>
+    <!-- Blog Card -->
+    <article class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+      <img src="https://via.placeholder.com/300x200" alt="Blog Thumbnail">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">Blog Page</h2>
+        <p class="mt-2">Read my latest articles and posts.</p>
+        <a href="blog.html" class="inline-block mt-4 px-4 py-2 border-2 border-blue-500 text-blue-500 rounded hover:bg-blue-50">Go to Blog</a>
+      </div>
+    </article>
+    <!-- Products Card -->
+    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="https://via.placeholder.com/300x200" alt="Products Thumbnail">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">Products Page</h2>
+        <p class="mt-2">Browse our featured products.</p>
+        <a href="products.html" class="inline-block mt-4 px-4 py-2 bg-yellow-400 text-white rounded-full">Go to Products</a>
+      </div>
+    </article>
+    <!-- Game Card -->
+    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="https://via.placeholder.com/300x200" alt="Game Thumbnail">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">Game Page</h2>
+        <p class="mt-2">Play a fun interactive game.</p>
+        <a href="game.html" class="inline-block mt-4 px-4 py-2 bg-red-500 text-white rounded-lg">Go to Game</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Scripts -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.2.3/cdn.min.js"></script>
+
+  <script src="alt-index.js"></script>
+
+</body>
+</html>
+
